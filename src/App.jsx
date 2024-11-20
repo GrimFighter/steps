@@ -8,7 +8,7 @@ export default function App ()
   ];
 
   const [ count, setCount ] = useState( 0 );
-  const [ message, setMessage ] = useState( messages[ count ] );
+
 
 
   function next ()
@@ -16,7 +16,6 @@ export default function App ()
     if ( count < 2 )
     {
       setCount( prev=>prev+1 );
-      setMessage( messages[ count ] );
     } 
 
 
@@ -27,7 +26,6 @@ export default function App ()
     if ( count > 0 )
     {
       setCount( prev=>prev-1 );
-      setMessage( messages[ count ] );
     } 
   }
 
